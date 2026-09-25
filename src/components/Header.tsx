@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
 import logo from '../assets/logo.webp'
 import { business, navigation, routes } from '../data/business'
@@ -9,27 +9,19 @@ type HeaderProps = {
 
 export default function Header({ currentPath = routes.home }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false)
-  const headerRef = useRef<HTMLElement>(null)
 
   useEffect(() => {
     const closeOnEscape = (event: KeyboardEvent) => {
       if (event.key === 'Escape') setMenuOpen(false)
     }
-    const closeOnOutsideClick = (event: MouseEvent) => {
-      if (!headerRef.current?.contains(event.target as Node)) setMenuOpen(false)
-    }
     window.addEventListener('keydown', closeOnEscape)
-    window.addEventListener('click', closeOnOutsideClick)
-    return () => {
-      window.removeEventListener('keydown', closeOnEscape)
-      window.removeEventListener('click', closeOnOutsideClick)
-    }
+    return () => window.removeEventListener('keydown', closeOnEscape)
   }, [])
 
   const closeMenu = () => setMenuOpen(false)
 
   return (
-    <header className="site-header" ref={headerRef}>
+    <header className="site-header">
       <div className="container header-inner">
         <a className="brand" href={routes.home} onClick={closeMenu} aria-label={`${business.name} home`}>
           <img className="brand-logo" src={logo} alt={business.name} loading="eager" decoding="async" />
@@ -58,6 +50,7 @@ export default function Header({ currentPath = routes.home }: HeaderProps) {
             type="button"
             aria-label={menuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={menuOpen}
+            aria-controls="mobile-menu"
             onClick={() => setMenuOpen((open) => !open)}
           >
             {menuOpen ? <X size={22} strokeWidth={1.6} /> : <Menu size={22} strokeWidth={1.6} />}
@@ -65,7 +58,13 @@ export default function Header({ currentPath = routes.home }: HeaderProps) {
         </div>
       </div>
 
-      <div className={`mobile-menu ${menuOpen ? 'is-open' : ''}`}>
+      <div
+        className={`mobile-menu-backdrop ${menuOpen ? 'is-open' : ''}`}
+        onClick={closeMenu}
+        aria-hidden="true"
+      />
+
+      <div className={`mobile-menu ${menuOpen ? 'is-open' : ''}`} id="mobile-menu">
         <div className="container mobile-menu-inner">
           <p className="eyebrow">Explore {business.shortName}</p>
           <nav aria-label="Mobile navigation">
