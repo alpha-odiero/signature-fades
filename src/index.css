@@ -1807,19 +1807,30 @@ ul {
   }
 
   .mobile-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 1;
     display: block;
     max-height: 0;
-    overflow: hidden;
+    overflow: hidden auto;
     background: var(--white);
     border-bottom: 1px solid transparent;
+    box-shadow: 0 26px 44px rgba(11, 11, 11, 0.14);
     opacity: 0;
-    transition: max-height 450ms ease, opacity 250ms ease, border-color 250ms ease;
+    visibility: hidden;
+    overscroll-behavior: contain;
+    transition: max-height 450ms ease, opacity 250ms ease, border-color 250ms ease,
+      visibility 0s linear 450ms;
   }
 
   .mobile-menu.is-open {
-    max-height: 520px;
+    max-height: min(520px, calc(100vh - 70px));
     border-color: var(--line);
     opacity: 1;
+    visibility: visible;
+    transition: max-height 450ms ease, opacity 250ms ease, border-color 250ms ease;
   }
 
   .mobile-menu-inner {
