@@ -33,7 +33,7 @@ export default function ExtraServices() {
               <Reveal className="extra-card" delay={index * 90} key={service.name}>
                 <a href={routes.contact} aria-label={`Explore ${service.name}`}>
                   <div className="extra-card-image">
-                    <img src={service.image} alt={service.name} loading="lazy" />
+                    <img src={service.image} alt={service.name} loading="lazy" decoding="async" />
                     <span className="extra-card-number">0{index + 1}</span>
                   </div>
                   <div className="extra-card-copy">

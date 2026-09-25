@@ -1,15 +1,16 @@
-import { useEffect, useState } from 'react'
+import { lazy, Suspense, useEffect, useState, type ComponentType } from 'react'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './pages/HomePage'
-import ServicesPage from './pages/ServicesPage'
-import GalleryPage from './pages/GalleryPage'
-import AboutPage from './pages/AboutPage'
-import ContactPage from './pages/ContactPage'
-import NotFoundPage from './pages/NotFoundPage'
 import { business, routes } from './data/business'
 
-type PageComponent = typeof HomePage
+const ServicesPage = lazy(() => import('./pages/ServicesPage'))
+const GalleryPage = lazy(() => import('./pages/GalleryPage'))
+const AboutPage = lazy(() => import('./pages/AboutPage'))
+const ContactPage = lazy(() => import('./pages/ContactPage'))
+const NotFoundPage = lazy(() => import('./pages/NotFoundPage'))
+
+type PageComponent = ComponentType
 
 const pages: Record<string, PageComponent> = {
   [routes.home]: HomePage,
@@ -53,7 +54,9 @@ function App() {
     <>
       <Header currentPath={currentPath} />
       <main>
-        <Page />
+        <Suspense fallback={<div className="page-fallback" aria-hidden="true" />}>
+          <Page />
+        </Suspense>
       </main>
       <Footer />
     </>

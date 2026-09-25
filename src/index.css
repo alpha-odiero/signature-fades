@@ -102,6 +102,17 @@ ul {
   overflow: hidden;
 }
 
+@supports (contain-intrinsic-size: auto 700px) {
+  .section {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 700px;
+  }
+}
+
+.page-fallback {
+  min-height: 70vh;
+}
+
 .reveal {
   opacity: 1;
   transform: translateY(0);

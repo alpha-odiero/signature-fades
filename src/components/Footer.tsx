@@ -1,5 +1,5 @@
 import { ArrowUpRight, MapPin, MessageCircle, Phone } from 'lucide-react'
-import darkLogo from '../assets/dark logo.png'
+import darkLogo from '../assets/dark logo.webp'
 import { business, navigation, routes } from '../data/business'
 
 export default function Footer() {

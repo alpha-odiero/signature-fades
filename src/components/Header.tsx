@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { ArrowUpRight, Menu, X } from 'lucide-react'
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.webp'
 import { business, navigation, routes } from '../data/business'
 
 type HeaderProps = {

@@ -46,7 +46,7 @@ export default function StorySection() {
             </a>
           </Reveal>
           <Reveal className="story-image" delay={150}>
-            <img src={business.heroImage} alt="Signature Fades barber shop atmosphere" loading="lazy" />
+            <img src={business.heroImage} alt="Signature Fades barber shop atmosphere" loading="lazy" decoding="async" />
             <span className="story-image-label">Sharp looks start here</span>
           </Reveal>
         </div>

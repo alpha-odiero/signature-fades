@@ -1,6 +1,6 @@
 import { ArrowUpRight } from 'lucide-react'
-import heroImage from '../assets/hero sider.jpg'
-import styleImage from '../assets/style.jpg'
+import heroImage from '../assets/hero sider.webp'
+import styleImage from '../assets/style.webp'
 import { business, routes } from '../data/business'
 import Reveal from './Reveal'
 
@@ -15,6 +15,7 @@ export default function IntroSection() {
                 src={heroImage}
                 alt="Signature Fades barber shop interior with a clean modern setup"
                 loading="lazy"
+                decoding="async"
               />
               <span className="image-caption">Sharp looks start here</span>
             </Reveal>
@@ -23,6 +24,7 @@ export default function IntroSection() {
                 src={styleImage}
                 alt="A carefully finished haircut and beard styling detail"
                 loading="lazy"
+                decoding="async"
               />
               <span className="image-caption">Your style, your signature</span>
             </Reveal>

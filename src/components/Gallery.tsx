@@ -24,7 +24,7 @@ export default function Gallery() {
           {gallery.slice(0, 5).map((item, index) => (
             <Reveal className={`gallery-item ${item.className}`} delay={index * 65} key={item.image}>
               <figure>
-                <img src={item.image} alt={item.alt} loading="lazy" />
+                <img src={item.image} alt={item.alt} loading="lazy" decoding="async" />
                 <figcaption>
                   <span>0{index + 1}</span>
                   <span>View detail</span>

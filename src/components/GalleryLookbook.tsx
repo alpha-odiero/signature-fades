@@ -28,7 +28,7 @@ export default function GalleryLookbook() {
           {gallery.map((item, index) => (
             <Reveal className={`gallery-page-item gallery-page-item-${index + 1}`} delay={index * 45} key={`${item.image}-${index}`}>
               <figure>
-                <img src={item.image} alt={item.alt} loading="lazy" />
+                <img src={item.image} alt={item.alt} loading="lazy" decoding="async" />
                 <figcaption>
                   <span>0{index + 1}</span>
                   <span>Signature Fades</span>

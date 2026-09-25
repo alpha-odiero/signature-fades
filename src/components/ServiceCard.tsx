@@ -11,7 +11,7 @@ export default function ServiceCard({ service, index }: ServiceCardProps) {
     <article className="service-card">
       <a className="service-card-link" href={routes.contact} aria-label={`Discover ${service.name}`}>
         <div className="service-card-image">
-          <img src={service.image} alt={service.name} loading="lazy" />
+          <img src={service.image} alt={service.name} loading="lazy" decoding="async" />
           <span className="service-card-index">0{index + 1}</span>
           <span className="service-card-arrow" aria-hidden="true">
             <ArrowUpRight size={17} strokeWidth={1.6} />
