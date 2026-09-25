@@ -15,7 +15,7 @@ export default function LocationSection() {
             <p className="section-number">02 <span>/</span> 04</p>
             <h2>Find us in Murang’a.</h2>
             <p className="body-copy">
-              Signature Fadez is near General Hawkers in Murang’a, Kenya. Get directions before you
+              Signature Fades is near General Hawkers in Murang’a, Kenya. Get directions before you
               set off, then come through for your next sharp look.
             </p>
             <div className="address-block">
@@ -45,7 +45,7 @@ export default function LocationSection() {
             </div>
             <div className="map-canvas" role="region" aria-label="Google map showing the business location">
               <iframe
-                title="Signature Fadez location map"
+                title="Signature Fades location map"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2862.2599774371693!2d37.15785587310792!3d-0.7213597352657372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182899cf9c0b341f%3A0x46eda2f8c3192b99!2sSignature%20fades!5e1!3m2!1sen!2ske!4v1790348097520!5m2!1sen!2ske"
                 width="600"
                 height="450"

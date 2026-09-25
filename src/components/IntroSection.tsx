@@ -13,7 +13,7 @@ export default function IntroSection() {
             <Reveal className="intro-image intro-image-main">
               <img
                 src={heroImage}
-                alt="Signature Fadez barber shop interior with a clean modern setup"
+                alt="Signature Fades barber shop interior with a clean modern setup"
                 loading="lazy"
               />
               <span className="image-caption">Sharp looks start here</span>
@@ -43,7 +43,7 @@ export default function IntroSection() {
             <p className="body-copy">{business.description}</p>
             <p className="body-copy body-copy-secondary">
               Whether you are looking for a fresh fade, a sharp line-up, a clean beard, a relaxing
-              facial, or a complete grooming experience, Signature Fadez is designed to keep you
+              facial, or a complete grooming experience, Signature Fades is designed to keep you
               looking and feeling your best.
             </p>
             <a className="text-link" href={routes.services}>

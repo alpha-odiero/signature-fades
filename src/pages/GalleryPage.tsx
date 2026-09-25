@@ -31,7 +31,7 @@ export default function GalleryPage() {
               or grooming detail that feels right for you and is easy to keep looking sharp.
             </p>
             <p className="body-copy body-copy-secondary">
-              Signature Fadez brings six service categories together in one place, so your next visit can
+              Signature Fades brings six service categories together in one place, so your next visit can
               be as simple or as complete as you want it to be.
             </p>
           </div>

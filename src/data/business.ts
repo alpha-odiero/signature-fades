@@ -55,8 +55,8 @@ export const routes = {
 } as const
 
 export const business = {
-  name: 'Signature Fadez Barber Shop',
-  shortName: 'Signature Fadez',
+  name: 'Signature Fades Barber Shop',
+  shortName: 'Signature Fades',
   eyebrow: 'Professional barbering & grooming',
   tagline: 'Sharp Cuts. Clean Lines. Signature Style.',
   description:
@@ -65,10 +65,10 @@ export const business = {
   phone: '0745 437817',
   phoneHref: 'tel:+254745437817',
   whatsappUrl: 'https://wa.me/254745437817',
-  hours: 'Monday–Saturday, 9:00 AM – 8:00 PM',
-  closedDay: 'Sunday · Closed',
+  hours: 'Monday–Sunday, 9:00 AM – 8:00 PM',
+  weekNote: 'Open 7 days a week',
   mapsUrl: 'https://maps.app.goo.gl/XdRG9Zvpnmgar4fh9',
-  reviewUrl: 'https://www.google.com/search?q=Signature+Fadez+Barber+Shop+Muranga+Kenya',
+  reviewUrl: 'https://www.google.com/search?q=Signature+Fades+Barber+Shop+Muranga+Kenya',
   heroImage,
   heroBackground,
 }
@@ -86,7 +86,7 @@ export const services: Service[] = [
     name: 'Haircuts & Fades',
     description: 'Professional cuts tailored to your preferred style.',
     longDescription:
-      'Start with the shape you want, then refine the details around your hairline, temples, and neckline. Signature Fadez keeps the cut balanced, clean, and easy to maintain between visits.',
+      'Start with the shape you want, then refine the details around your hairline, temples, and neckline. Signature Fades keeps the cut balanced, clean, and easy to maintain between visits.',
     details: ['Signature Fade', 'Low / Mid / High Fade', 'Classic & Kids Cuts'],
     idealFor: ['A clean reset', 'A sharper everyday look', 'A style made for you'],
     image: signatureCutImage,
@@ -160,8 +160,8 @@ export const features: Feature[] = [
     description: 'A dedicated space for customers who want to look sharp and feel refreshed.',
   },
   {
-    title: 'Six-Day Service',
-    description: 'Open Monday to Saturday, with Sunday reserved for a slower day.',
+    title: 'Seven-Day Service',
+    description: 'Open every day of the week, so your next visit always fits your schedule.',
   },
 ]
 
@@ -196,34 +196,34 @@ export const openingHours: OpeningHours[] = [
   { day: 'Thursday', hours: '9:00 AM – 8:00 PM' },
   { day: 'Friday', hours: '9:00 AM – 8:00 PM' },
   { day: 'Saturday', hours: '9:00 AM – 8:00 PM' },
-  { day: 'Sunday', hours: 'Closed' },
+  { day: 'Sunday', hours: '9:00 AM – 8:00 PM' },
 ]
 
 export const faqs: Faq[] = [
   {
-    question: 'What services are available at Signature Fadez?',
+    question: 'What services are available at Signature Fades?',
     answer:
-      'Signature Fadez offers haircuts and fades, beard grooming, line-ups, facials and skin care, manicure and pedicure, and massage services. You can describe the look or refresh you need when you call.',
+      'Signature Fades offers haircuts and fades, beard grooming, line-ups, facials and skin care, manicure and pedicure, and massage services. You can describe the look or refresh you need when you call.',
   },
   {
     question: 'How do I get in touch about a visit?',
     answer:
-      `Call ${business.phone} to check availability or ask about a service. The shop is open Monday to Saturday from 9:00 AM to 8:00 PM.`,
+      `Call ${business.phone} to check availability or ask about a service. The shop is open every day from 9:00 AM to 8:00 PM.`,
   },
   {
     question: 'Where can I find the shop?',
     answer: `${business.address}. Use the directions link on the Contact page to open the location in Google Maps.`,
   },
   {
-    question: 'Is Signature Fadez open on Sunday?',
-    answer: `${business.closedDay}. Plan your visit for Monday through Saturday, or call ahead if you need to confirm availability.`,
+    question: 'Is Signature Fades open on Sunday?',
+    answer: `Yes. ${business.hours}. Call ahead if you want to confirm a specific time slot.`,
   },
 ]
 
 export const gallery: GalleryImage[] = [
   {
     image: heroImage,
-    alt: 'Signature Fadez barber shop interior with a clean, modern grooming space',
+    alt: 'Signature Fades barber shop interior with a clean, modern grooming space',
     className: 'gallery-featured',
   },
   {

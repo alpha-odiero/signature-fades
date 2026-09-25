@@ -28,7 +28,7 @@ export default function ProcessSection() {
     <section className="section section-process">
       <div className="container">
         <PageSectionHeading
-          eyebrow="The Signature Fadez process"
+          eyebrow="The Signature Fades process"
           title="Simple steps. Considered finishes."
           description="Good grooming should feel straightforward from the first conversation to the final check."
           light

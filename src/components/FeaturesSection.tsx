@@ -13,7 +13,7 @@ export default function FeaturesSection() {
             <span className="eyebrow-dot" />
             Why choose us
           </p>
-          <h2>Why choose Signature Fadez?</h2>
+          <h2>Why choose Signature Fades?</h2>
           <p>Professional grooming with a personal finish, every time.</p>
         </Reveal>
         <div className="features-grid">

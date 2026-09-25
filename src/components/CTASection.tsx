@@ -13,7 +13,7 @@ export default function CTASection() {
               Your next look starts here
             </p>
             <h2>Ready for your next look?</h2>
-            <p>Visit Signature Fadez and leave with a style that speaks for itself.</p>
+            <p>Visit Signature Fades and leave with a style that speaks for itself.</p>
           </div>
           <div className="cta-actions">
             <a className="button button-primary" href={business.phoneHref}>

@@ -13,13 +13,13 @@ export default function Footer() {
             </a>
             <p>{business.tagline}</p>
             <div className="social-links">
-              <a href={business.phoneHref} aria-label="Call Signature Fadez">
+              <a href={business.phoneHref} aria-label="Call Signature Fades">
                 <Phone size={17} strokeWidth={1.45} />
               </a>
               <a href={business.mapsUrl} target="_blank" rel="noreferrer" aria-label="Get directions">
                 <MapPin size={17} strokeWidth={1.45} />
               </a>
-              <a href={business.whatsappUrl} target="_blank" rel="noreferrer" aria-label="Message Signature Fadez on WhatsApp">
+              <a href={business.whatsappUrl} target="_blank" rel="noreferrer" aria-label="Message Signature Fades on WhatsApp">
                 <MessageCircle size={17} strokeWidth={1.45} />
               </a>
             </div>
@@ -51,12 +51,12 @@ export default function Footer() {
               WhatsApp us
             </a>
             <p className="footer-hours">{business.hours}</p>
-            <p className="footer-hours">{business.closedDay}</p>
+            <p className="footer-hours">{business.weekNote}</p>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <span className="footer-legal">© 2026 Signature Fadez Barber Shop. All rights reserved.</span>
+          <span className="footer-legal">© 2026 Signature Fades Barber Shop. All rights reserved.</span>
           <a href={routes.home} className="back-to-top">
             Back to top
             <ArrowUpRight size={14} strokeWidth={1.5} />

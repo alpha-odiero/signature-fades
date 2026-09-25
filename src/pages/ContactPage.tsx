@@ -10,9 +10,9 @@ export default function ContactPage() {
   return (
     <>
       <PageHero
-        eyebrow="Contact Signature Fadez"
+        eyebrow="Contact Signature Fades"
         title="Let’s get you ready for your next look."
-        description="Call the shop, check the hours, or get directions to Signature Fadez near General Hawkers in Murang’a."
+        description="Call the shop, check the hours, or get directions to Signature Fades near General Hawkers in Murang’a."
         sectionNumber="04 / 04"
         primaryLabel="Call now"
         secondaryLabel="View location"

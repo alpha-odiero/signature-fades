@@ -30,7 +30,7 @@ export default function Hero() {
           </div>
         </Reveal>
         <div className="hero-sider" aria-hidden="true">
-          <img src={business.heroImage} alt="Signature Fadez barber shop" loading="eager" decoding="async" fetchPriority="high" />
+          <img src={business.heroImage} alt="Signature Fades barber shop" loading="eager" decoding="async" fetchPriority="high" />
         </div>
       </div>
       <div className="container hero-footer">

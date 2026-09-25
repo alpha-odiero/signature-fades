@@ -10,7 +10,7 @@ export default function ContactSection() {
           <Reveal className="contact-intro">
             <p className="eyebrow">
               <span className="eyebrow-dot" />
-              Contact Signature Fadez
+              Contact Signature Fades
             </p>
             <p className="section-number">04 <span>/</span> 04</p>
             <h2>Ready for your next look?</h2>
@@ -62,7 +62,7 @@ export default function ContactSection() {
               <div>
                 <span className="meta-label">WhatsApp</span>
                 <a href={business.whatsappUrl} target="_blank" rel="noreferrer">
-                  Message Signature Fadez
+                  Message Signature Fades
                 </a>
               </div>
             </div>
@@ -73,7 +73,7 @@ export default function ContactSection() {
               <div>
                 <span className="meta-label">Opening hours</span>
                 <p>{business.hours}</p>
-                <p className="closed-day">{business.closedDay}</p>
+                <p className="week-note">{business.weekNote}</p>
               </div>
             </div>
           </Reveal>
@@ -84,7 +84,7 @@ export default function ContactSection() {
             <MapPin size={19} strokeWidth={1.45} aria-hidden="true" />
             <span>
               <strong>Get directions</strong>
-              <small>Open Signature Fadez in Google Maps</small>
+              <small>Open Signature Fades in Google Maps</small>
             </span>
             <ArrowUpRight size={17} strokeWidth={1.6} />
           </a>
@@ -99,7 +99,7 @@ export default function ContactSection() {
           <a className="contact-link-card" href={business.phoneHref}>
             <Phone size={19} strokeWidth={1.45} aria-hidden="true" />
             <span>
-              <strong>Call Signature Fadez</strong>
+              <strong>Call Signature Fades</strong>
               <small>{business.phone}</small>
             </span>
             <ArrowUpRight size={17} strokeWidth={1.6} />
@@ -121,9 +121,9 @@ export default function ContactSection() {
                 <span className="eyebrow-dot" />
                 Opening hours
               </p>
-              <h3>Open 6 days a week.</h3>
+              <h3>Open 7 days a week.</h3>
             </div>
-            <span className="schedule-note">Sunday closed</span>
+            <span className="schedule-note">Open Sundays</span>
           </div>
           <div className="schedule-grid">
             {openingHours.map((item) => (

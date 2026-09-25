@@ -10,7 +10,7 @@ export default function AboutPage() {
   return (
     <>
       <PageHero
-        eyebrow="About Signature Fadez"
+        eyebrow="About Signature Fades"
         title="Your grooming. Your style. Your signature."
         description="A modern barbering and grooming destination in Murang’a, built around sharp work, personal style, and a more considered visit."
         sectionNumber="03 / 04"

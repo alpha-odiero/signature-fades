@@ -13,7 +13,7 @@ export default function ServicesPage() {
       <PageHero
         eyebrow="The service menu"
         title="Grooming services with a sharper finish."
-        description="Explore haircuts, beard care, line-ups, facials, nail grooming, and massage services at Signature Fadez in Murang’a."
+        description="Explore haircuts, beard care, line-ups, facials, nail grooming, and massage services at Signature Fades in Murang’a."
         sectionNumber="01 / 04"
         primaryLabel="Call to ask"
         secondaryLabel="View gallery"

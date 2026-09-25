@@ -16,7 +16,7 @@ const visitNotes = [
   },
   {
     title: 'Plan your arrival',
-    description: 'Monday to Saturday, 9:00 AM to 8:00 PM. Sunday is reserved as a closed day.',
+    description: 'Monday to Sunday, 9:00 AM to 8:00 PM, so any day of the week works for your visit.',
     icon: Clock3,
   },
 ]
@@ -59,7 +59,7 @@ export default function VisitSection() {
         </Reveal>
         <p className="visit-hours-line">
           <Clock3 size={15} strokeWidth={1.5} aria-hidden="true" />
-          {business.hours} · {business.closedDay}
+          {business.hours} · {business.weekNote}
         </p>
       </div>
     </section>

@@ -35,7 +35,7 @@ export default function Gallery() {
         </div>
 
         <div className="gallery-footer">
-          <span>Selected work / Signature Fadez</span>
+          <span>Selected work / Signature Fades</span>
           <a className="text-link" href={routes.contact}>
             Plan your visit
             <ArrowUpRight size={17} strokeWidth={1.6} />

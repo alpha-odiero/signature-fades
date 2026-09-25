@@ -31,7 +31,7 @@ export default function GalleryLookbook() {
                 <img src={item.image} alt={item.alt} loading="lazy" />
                 <figcaption>
                   <span>0{index + 1}</span>
-                  <span>Signature Fadez</span>
+                  <span>Signature Fades</span>
                 </figcaption>
               </figure>
             </Reveal>

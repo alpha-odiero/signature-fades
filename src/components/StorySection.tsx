@@ -31,9 +31,9 @@ export default function StorySection() {
         <div className="story-layout">
           <Reveal className="story-copy">
             <PageSectionHeading
-              eyebrow="The Signature Fadez approach"
+              eyebrow="The Signature Fades approach"
               title="A modern shop with a personal point of view."
-              description="Signature Fadez brings together practical barbering and everyday grooming for people who want to look sharp without overthinking the process."
+              description="Signature Fades brings together practical barbering and everyday grooming for people who want to look sharp without overthinking the process."
             />
             <p className="body-copy body-copy-secondary">
               The goal is simple: make the experience feel considered from the first look in the mirror
@@ -46,7 +46,7 @@ export default function StorySection() {
             </a>
           </Reveal>
           <Reveal className="story-image" delay={150}>
-            <img src={business.heroImage} alt="Signature Fadez barber shop atmosphere" loading="lazy" />
+            <img src={business.heroImage} alt="Signature Fades barber shop atmosphere" loading="lazy" />
             <span className="story-image-label">Sharp looks start here</span>
           </Reveal>
         </div>
