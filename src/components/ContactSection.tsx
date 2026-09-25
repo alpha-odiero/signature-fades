@@ -23,15 +23,11 @@ export default function ContactSection() {
                 Call now
                 <Phone size={15} strokeWidth={1.6} />
               </a>
-              <a className="button button-secondary" href={business.whatsappUrl} target="_blank" rel="noreferrer">
-                WhatsApp
-                <MessageCircle size={15} strokeWidth={1.6} />
-              </a>
-              <a className="button button-secondary" href={business.mapsUrl} target="_blank" rel="noreferrer">
-                Get directions
-                <ArrowUpRight size={16} strokeWidth={1.7} />
-              </a>
-            </div>
+            <a className="button button-secondary" href={business.whatsappUrl} target="_blank" rel="noreferrer">
+              WhatsApp
+              <MessageCircle size={15} strokeWidth={1.6} />
+            </a>
+          </div>
           </Reveal>
 
           <Reveal className="contact-details" delay={150}>

@@ -1,10 +1,12 @@
 import { ArrowUpRight, MapPin, MessageCircle, Phone } from 'lucide-react'
+import type { CSSProperties } from 'react'
 import darkLogo from '../assets/dark logo.webp'
+import footerBackground from '../assets/footer.webp'
 import { business, navigation, routes } from '../data/business'
 
 export default function Footer() {
   return (
-    <footer className="site-footer">
+    <footer className="site-footer" style={{ '--footer-bg': `url(${footerBackground})` } as CSSProperties}>
       <div className="container">
         <div className="footer-main">
           <div className="footer-brand-column">
@@ -47,8 +49,10 @@ export default function Footer() {
             <a href={business.whatsappUrl} target="_blank" rel="noreferrer" className="footer-contact-line">
               WhatsApp us
             </a>
-            <p className="footer-hours">{business.hours}</p>
-            <p className="footer-hours">{business.weekNote}</p>
+            <div className="footer-hours-block">
+              <p className="footer-hours">{business.hours}</p>
+              <p className="footer-hours">{business.weekNote}</p>
+            </div>
           </div>
         </div>
 

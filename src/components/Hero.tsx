@@ -23,8 +23,8 @@ export default function Hero() {
               Book by phone
               <Phone size={15} strokeWidth={1.7} />
             </a>
-            <a className="button button-light-outline" href={business.mapsUrl} target="_blank" rel="noreferrer">
-              Get directions
+            <a className="button button-light-outline" href={business.whatsappUrl} target="_blank" rel="noreferrer">
+              Message us
               <ArrowUpRight size={16} strokeWidth={1.7} />
             </a>
           </div>

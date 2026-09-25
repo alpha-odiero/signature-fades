@@ -1,4 +1,3 @@
-import { ArrowUpRight, Phone } from 'lucide-react'
 import { business } from '../data/business'
 import Reveal from './Reveal'
 
@@ -9,10 +8,6 @@ type PageHeroProps = {
   image?: string
   imageAlt?: string
   sectionNumber: string
-  primaryLabel?: string
-  primaryHref?: string
-  secondaryLabel?: string
-  secondaryHref?: string
 }
 
 export default function PageHero({
@@ -22,10 +17,6 @@ export default function PageHero({
   image,
   imageAlt = `${business.shortName} page`,
   sectionNumber,
-  primaryLabel = 'Call the shop',
-  primaryHref = business.phoneHref,
-  secondaryLabel,
-  secondaryHref,
 }: PageHeroProps) {
   const hasImage = Boolean(image)
 
@@ -43,18 +34,6 @@ export default function PageHero({
           <p className="section-number">{sectionNumber}</p>
           <h1>{title}</h1>
           <p className="page-hero-description">{description}</p>
-          <div className="page-hero-actions">
-            <a className="button button-primary" href={primaryHref}>
-              {primaryLabel}
-              <Phone size={15} strokeWidth={1.7} />
-            </a>
-            {secondaryLabel && secondaryHref && (
-              <a className="button button-secondary" href={secondaryHref}>
-                {secondaryLabel}
-                <ArrowUpRight size={16} strokeWidth={1.7} />
-              </a>
-            )}
-          </div>
         </Reveal>
         {hasImage && image && (
           <Reveal className="page-hero-media" delay={160}>

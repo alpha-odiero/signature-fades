@@ -1,7 +1,6 @@
 import PageHero from '../components/PageHero'
 import GalleryLookbook from '../components/GalleryLookbook'
 import CTASection from '../components/CTASection'
-import { routes } from '../data/business'
 
 export default function GalleryPage() {
   return (
@@ -10,11 +9,8 @@ export default function GalleryPage() {
         eyebrow="The Signature edit"
         title="A closer look at the details."
         description="Sharp cuts, clean lines, grooming tools, and the small visual details that make a visit feel like a reset."
-        sectionNumber="02 / 04"
-        primaryLabel="Book by phone"
-        secondaryLabel="Explore services"
-        secondaryHref={routes.services}
-      />
+          sectionNumber="02 / 04"
+        />
       <GalleryLookbook />
       <section className="section section-gallery-service-note">
         <div className="container gallery-service-note-layout">
