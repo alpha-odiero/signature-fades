@@ -39,15 +39,12 @@ export default function Footer() {
           <div className="footer-column footer-contact-column">
             <span className="footer-label">Find us</span>
             <a href={business.mapsUrl} target="_blank" rel="noreferrer" className="footer-contact-line">
-              <MapPin size={15} strokeWidth={1.45} aria-hidden="true" />
               {business.address}
             </a>
             <a href={business.phoneHref} className="footer-contact-line">
-              <Phone size={15} strokeWidth={1.45} aria-hidden="true" />
               {business.phone}
             </a>
             <a href={business.whatsappUrl} target="_blank" rel="noreferrer" className="footer-contact-line">
-              <MessageCircle size={15} strokeWidth={1.45} aria-hidden="true" />
               WhatsApp us
             </a>
             <p className="footer-hours">{business.hours}</p>

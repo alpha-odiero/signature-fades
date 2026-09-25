@@ -1704,14 +1704,7 @@ ul {
 .footer-contact-line {
   display: inline-flex;
   align-items: flex-start;
-  gap: 9px;
   margin-bottom: 12px;
-}
-
-.footer-contact-line svg {
-  flex: 0 0 auto;
-  margin-top: 2px;
-  color: var(--red);
 }
 
 .footer-hours {
